@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      /* ul li:first-child {
+        text-decoration: underline;
+      }
+      ul li:last-child {
+        color: blue;
+      }
+      ul li:nth-child(3) {
+        background-color: aqua;
+      } */
+      /* ul li:nth-last-child(2n)짝수 n : 0번부터 시작 {
+        color: blue;
+      } */
+      /* 1~3번째 까지 선택? */
+      ul li:nth-child(-n + 3) {
+        color: blue;
+      }
+      .fruits p:nth-child(2) {
+        color: red;
+      }
+      .box-group :nth-child(1) {
+        color: red;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">CSS 기본문법</h1>
+    <h2>구조 선택자</h2>
+    <ul>
+      <li>리스트아이템</li>
+      <li>리스트아이템</li>
+      <li>리스트아이템</li>
+      <li>리스트아이템</li>
+    </ul>
+    <ul class="fruits">
+      <div>딸기</div>
+      <p>사과</p>
+      <p>오렌지</p>
+      <span>망고</span>
+    </ul>
+    <div class="box-group">
+      <div>1</div>
+      <div>2</div>
+      <div>
+        3
+        <p>3-1</p>
+        <div>3-2</div>
+        <div>3-3</div>
+      </div>
+    </div>
+  </body>
+</html>

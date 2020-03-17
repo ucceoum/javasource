@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- var : 중복선언 허용
+         let : 중복선언 허용하지 않음
+         const : 상수로 선언
+
+         같으냐 ? ==(값만 비교), ===(값+타입까지 비교)
+         같지않냐? !=,          !==
+    -->
+    <script>
+      window.onload = function() {
+        let hw = document.getElementById("hw");
+        hw.addEventListener("click", function() {
+          alert("Hello world");
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <input type="text" id="hw" value="Hello" name="hw" />
+  </body>
+</html>

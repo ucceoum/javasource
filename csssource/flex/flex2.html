@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        /*
+        flex-direction : items 주축을 설정(row : 수평축, column : 수직축)
+         row(기본값) column, row-reverse, column-reverse
+         //
+         flex-wrap : 아이템 배치 시 줄바꿈 여부 결정
+         nowrap(기본값), wrap
+         
+         
+         
+         */
+      }
+      .container .box {
+        width: 33.3%;
+        height: 100px;
+      }
+      .container .box:first-child {
+        background: red;
+      }
+      .container .box:nth-child(2) {
+        background: blue;
+      }
+      .container .box:nth-child(3) {
+        background: green;
+      }
+      .container .box:nth-child(4) {
+        background: blueviolet;
+      }
+      .container .box:nth-child(5) {
+        background: brown;
+      }
+      .container .box:nth-child(6) {
+        background: purple;
+      }
+      .container .box:last-child {
+        background: yellow;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 수평으로 아이템 배치 : inline-block, float, flex -->
+    <div class="container">
+      <div class="box">flex-item1</div>
+      <div class="box">flex-item2</div>
+      <div class="box">flex-item3</div>
+      <div class="box">flex-item4</div>
+      <div class="box">flex-item5</div>
+      <div class="box">flex-item6</div>
+      <div class="box">flex-item7</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio harum
+      molestiae sint deserunt eligendi perferendis culpa porro illum ratione,
+      iusto possimus soluta ab, reiciendis fuga voluptatem exercitationem
+      laboriosam quos dolor.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="">date</label>
+        <input type="date" />
+      </div>
+      <div>
+        <label for="">datetime</label>
+        <input type="datetime" />
+      </div>
+      <div>
+        <label for="">datetime-local</label>
+        <input type="datetime-local" />
+      </div>
+      <div>
+        <label for="">time</label>
+        <input type="time" />
+      </div>
+      <div>
+        <label for="">month</label>
+        <input type="month" />
+      </div>
+      <div>
+        <label for="">week</label>
+        <input type="week" />
+      </div>
+      <div>
+        <!-- type : submit, reset, button
+            submit : 폼을 서버 쪽으로 무조건 보냄
+            reset : 현재 폼을 초기화
+            button : button 모양으로 보여주기(click => 스크립트)
+        
+        -->
+        <button type="submit">전송</button>
+        <input type="button" value="button" onclick="submit1()" />
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
+      </div>
+    </form>
+    <script>
+      function submit1() {
+        alert("페이지 이동");
+      }
+    </script>
+  </body>
+</html>

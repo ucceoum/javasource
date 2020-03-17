@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="table01.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td colspan="3">1행 1열</td>
+      </tr>
+      <tr>
+        <td>2행 1열</td>
+        <td rowspan="2">2행 2열</td>
+        <td>2행 3열</td>
+      </tr>
+      <tr>
+        <td>3행 1열</td>
+
+        <td>3행 3열</td>
+      </tr>
+    </table>
+
+    <br />
+    <table>
+      <caption>
+        행,열 병합 예제
+      </caption>
+      <tr>
+        <td rowspan="2">1행 1열</td>
+        <td>1행 2열</td>
+        <td>1행 3열</td>
+      </tr>
+      <tr>
+        <td>2행 2열</td>
+        <td>2행 3열</td>
+      </tr>
+      <tr>
+        <td colspan="3">3행 1열</td>
+      </tr>
+    </table>
+  </body>
+</html>

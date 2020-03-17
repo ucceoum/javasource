@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a:link {
+        color: white;
+        text-decoration: none;
+        padding: 11px 16px;
+      }
+      .menu {
+        background-color: #333;
+        width: 60%;
+        height: 40px;
+      }
+      .menu li {
+        list-style-type: none;
+        float: left;
+        height: 100%;
+        line-height: 36px;
+      }
+      .menu li:hover {
+        background-color: blueviolet;
+      }
+      .menu a:active {
+        background-color: brown;
+      }
+      a:visited {
+        color: white;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="menu clearfix">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </body>
+</html>

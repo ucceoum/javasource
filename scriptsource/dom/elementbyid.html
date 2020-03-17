@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* div {
+        border: 1px solid;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1 id="header1">Header1<br />a</h1>
+    <h2 id="header2">Header2</h2>
+    <div id="div1" class="div123">
+      divdivdivdiv
+    </div>
+    <script>
+      let h1 = document.getElementById("header1");
+      console.log(h1.innerText);
+      console.log(h1.innerHTML);
+      console.log(h1.textContent);
+
+      let h2 = document.getElementById("header2");
+      console.log(h2);
+      h2.innerText = "with getElementById()";
+
+      let d1 = document.getElementById("div1");
+
+      console.log(d1);
+    </script>
+  </body>
+</html>

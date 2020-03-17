@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="gender">성별</label>
+        <input
+          type="radio"
+          name="gender"
+          onchange="gender1()"
+          id="male"
+          value="남"
+        />
+        <label for="male">남</label>
+        <input
+          type="radio"
+          name="gender"
+          onchange="gender1()"
+          id="female"
+          value="여"
+        />
+        <label for="female">여</label>
+      </div>
+    </form>
+    <script>
+      function gender1() {
+        let gen = document.querySelector("[name='gender']:checked");
+        alert(gen.value);
+      }
+    </script>
+  </body>
+</html>

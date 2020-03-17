@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="FourRuleServlet" method="post">
+		<div>
+			<input type="text" name="num1" size="10" />
+			<select name="op" id="">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+		<input type="text" name="num2" size="10" />
+		<input type="submit" value="계산" />
+		<input type="reset" value="다시 계산" />
+		</div>
+	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+	$("[type='submit'").click(function(e) {
+        e.preventDefault();
+        e.pre
+        // alert();
+        let num1 = $("[name=num1]").val();
+        let num2 = $("[name=num2]").val();
+        if (isNaN(num1) || isNaN(num2) || num1 === "" || num2 === "") {
+          alert("숫자를 입력");
+          return;
+        }else{
+        	$("form").submit();
+        }
+      });
+	</script>
+</body>
+</html>

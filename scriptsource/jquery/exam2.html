@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="../dom/dog.jpg" alt="강아지" />
+    <button type="button" onclick="changeImg()">이미지 변경</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      let img1 = $("img");
+      let btn = true;
+      function changeImg() {
+        //버튼 클릭시 이미지 변경해주기
+        if (btn) {
+          img1.attr("src", "../dom/hadoop.jpg");
+          img1.attr("alt", "하둡");
+          btn = false;
+        } else {
+          img1.attr("src", "../dom/dog.jpg");
+          img1.attr("alt", "강아지");
+          btn = true;
+        }
+      }
+    </script>
+  </body>
+</html>

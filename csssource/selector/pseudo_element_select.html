@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      h1::before {
+        content: "before ";
+        color: red;
+      }
+      h2::after {
+        content: " after";
+        color: blue;
+      }
+      h3::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 가상요소(pseudoelement) 선택자
+         :: 와 함께 작성( : 도 가능하지만 현재 표준은 2개)
+         선택된 요소의 앞부분에 내용을 변경한다거나
+         뒷 부분에 내용을 변경하는 경우에 사용
+    
+    -->
+    <h1>css 기본 문법</h1>
+    <h2>가상 요소 선택자</h2>
+    <h3>의사 요소 선택자의 활용</h3>
+  </body>
+</html>

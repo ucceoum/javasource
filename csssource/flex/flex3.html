@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      .container {
+        display: flex;
+        border: 1px solid;
+        justify-content: space-evenly;
+        /*
+        justify-content : 주축의 정렬 방법
+        
+         flex-start(기본값), flex-end, center, space-between, space-around, space-evenly*/
+      }
+      .container .box {
+        width: 100px;
+        height: 100px;
+      }
+      .container .box:first-child {
+        background: red;
+      }
+      .container .box:nth-child(2) {
+        background: blue;
+      }
+
+      .container .box:last-child {
+        background: yellow;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 수평으로 아이템 배치 : inline-block, float, flex -->
+    <div class="container">
+      <div class="box">flex-item1</div>
+      <div class="box">flex-item2</div>
+      <div class="box">flex-item3</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio harum
+      molestiae sint deserunt eligendi perferendis culpa porro illum ratione,
+      iusto possimus soluta ab, reiciendis fuga voluptatem exercitationem
+      laboriosam quos dolor.
+    </p>
+  </body>
+</html>

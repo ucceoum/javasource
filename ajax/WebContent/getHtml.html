@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body onload="gethtml()">
+<!-- 이 페이지가 로드되면서 data/data.html 정보를 가져오기 -->
+<div class="container">
+	<ul>
+		<li>메뉴1</li>
+		<li>메뉴2</li>
+		<li>메뉴3</li>
+		<li>메뉴4</li>
+	</ul>
+</div>
+<div></div>
+<script>
+	function gethtml(){
+		//XMLHttprequest 객체 생성
+		let httpRequest = new XMLHttpRequest();
+		
+		//서버에게 보낼 요청 생성
+		httpRequest.open("get", "data/data.html", true);
+		httpRequest.send(null);
+		
+		//서버의 응답에 따른 로직
+		httpRequest.onreadystatechange = function() {
+			if(httpRequest.readyState == 4){
+				if(httpRequest.status == 200){
+					let div = document.querySelector("div:last-of-type");
+					div.innerHTML = httpRequest.responseText;
+				}
+			}
+		}
+		
+	}
+</script>
+</body>
+</html>

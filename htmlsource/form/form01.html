@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form : 웹서버에 정보를 제출하기 위한 양식 
+      method : get(기본)/ post(사용자가 입력한것이 안보이게)
+      autocomplete= "on/off" (기본값은 on)
+      name : 고유한 이름 부여
+    -->
+    <form action="/login" method="post" autocomplete="off" name="myform">
+      <input type="text" name="id" />
+      <input type="password" name="pwd" id="" />
+      <button type="submit">제출</button>
+    </form>
+  </body>
+</html>

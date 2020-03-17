@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 onclick="remove()" class="header1">header1</h1>
+    <h2>header2</h2>
+
+    <script>
+      function remove() {
+        //h1 영역을 클릭하면 h1 요소가 가지고있는 class 값을 삭제
+        // let h1 = document.querySelector("h1");
+
+        //html collection으로 가져옴
+        let h1 = document.querySelector("h1");
+
+        h1.removeAttribute("class");
+        console.log(h1);
+      }
+    </script>
+  </body>
+</html>

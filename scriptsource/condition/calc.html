@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>사칙연산 계산기</h1>
+    </div>
+    <div>
+      <input type="text" name="num1" id="num1" />
+      <select name="op" id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="text" name="num2" id="num2" value="30" />
+      <input type="button" value="계산" onclick="fourRules()" />
+      <div>
+        <input type="text" name="result" id="result" readonly />
+      </div>
+    </div>
+    <script>
+      function fourRules() {
+        //계산버튼을 클릭하면 사용자가 입력한 숫자 가져오기
+        let num1 = document.getElementById("num1");
+        let num2 = document.getElementById("num2");
+        let op = document.getElementById("op");
+        // console.log(num1.value);
+        // console.log(num2.value);
+        // console.log(op.value);
+        let n1;
+        let n2;
+        let result;
+        if (isNaN(num1.value) || isNaN(num2.value)) {
+          alert("aaa");
+        } else {
+          n1 = Number(num1.value);
+          n2 = Number(num2.value);
+        }
+        if (op.value === "+") {
+          result = n1 + n2;
+        } else if (op.value === "-") {
+          result = n1 - n2;
+        } else if (op.value === "*") {
+          result = n1 * n2;
+        } else {
+          result = n1 / n2;
+        }
+        console.log(result);
+        document.getElementById("result").value = result;
+      }
+    </script>
+  </body>
+</html>

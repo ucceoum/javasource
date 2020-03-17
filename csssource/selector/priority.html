@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      /* 스타일 우선순위
+         1. 명시도 점수가 높을 수록 우선순위가 높음
+     (!important > 인라인 > 아이디 > 클래스 > 태그 > 전체 > 상속)
+
+ */
+
+      .area p {
+        color: blue;
+      }
+      p {
+        color: red;
+      }
+      #text {
+        color: green;
+      }
+      #text2 {
+        color: aqua;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="area">
+      <p id="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+        nostrum dignissimos dicta maiores modi dolore, laudantium veritatis
+        ratione. Dolorum nihil, dolor laboriosam facere obcaecati et at velit ut
+        cupiditate aut.
+      </p>
+      <p id="text2" style="color : magenta">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+        nostrum dignissimos dicta maiores modi dolore, laudantium veritatis
+        ratione. Dolorum nihil, dolor laboriosam facere obcaecati et at velit ut
+        cupiditate aut.
+      </p>
+    </div>
+  </body>
+</html>
